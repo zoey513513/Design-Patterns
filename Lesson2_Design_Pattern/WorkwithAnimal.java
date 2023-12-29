@@ -1,6 +1,4 @@
-package Lesson1_Design_Pattern;
-
-import Lesson1_Design_Pattern.Dog;
+package Lesson2_Design_Pattern;
 
 public class WorkwithAnimal {
     public static void main(String[] args){
@@ -16,7 +14,6 @@ public class WorkwithAnimal {
         Cat hickory = new Cat();
         hickory.setName("Hickory");
         System.out.println(hickory.getSound());
-
     }
 
     public static void changeObjectName(Dog figo){

@@ -1,4 +1,4 @@
-package Lesson1_Design_Pattern;
+package Lesson2_Design_Pattern;
 public class Animal{
     private String name;
     private int weight;
