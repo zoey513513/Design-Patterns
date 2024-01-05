@@ -1,4 +1,4 @@
-package Lesson2_Design_Pattern.section1;
+package Lesson2_Design_Pattern.section1_polymorphism;
 public class Animal{
     private String name;
     private int weight;
