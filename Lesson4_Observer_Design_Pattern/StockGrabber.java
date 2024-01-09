@@ -41,7 +41,7 @@ public class StockGrabber implements Subject{
         notifyObserver();
     }
 
-    public void setGoogleMPrice(double newGooglePrice){
+    public void setGooglePrice(double newGooglePrice){
         this.googlePrice = newGooglePrice;
         notifyObserver();
     }

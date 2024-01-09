@@ -6,17 +6,26 @@ public class GrabStock {
         // stockGrabber.register(observer1);
         stockGrabber.setIBMPrice(112);
         stockGrabber.setApplePrice(230);
-        stockGrabber.setGoogleMPrice(130);
+        stockGrabber.setGooglePrice(130);
         StockObserver observer2 = new StockObserver(stockGrabber);
         // stockGrabber.register(observer1);
         stockGrabber.setIBMPrice(2);
         stockGrabber.setApplePrice(30);
-        stockGrabber.setGoogleMPrice(10);
+        stockGrabber.setGooglePrice(10);
         stockGrabber.unregister(observer2);
         stockGrabber.setIBMPrice(4);
         stockGrabber.setApplePrice(30);
-        stockGrabber.setGoogleMPrice(10);
-        stockGrabber.unregister(observer1);
+        stockGrabber.setGooglePrice(10);
+        // stockGrabber.unregister(observer1);
+
+
+        Runnable getIBM = new GetTheStock(stockGrabber, 2, "IBM", 120);
+        Runnable getApple = new GetTheStock(stockGrabber, 2, "Apple", 198);
+        Runnable getGoogle = new GetTheStock(stockGrabber, 2, "Google", 140);
+        new Thread(getIBM).start();
+        new Thread(getApple).start();
+        new Thread(getGoogle).start();
+
     }
 
 }
