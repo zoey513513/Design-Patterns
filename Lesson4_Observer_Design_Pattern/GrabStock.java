@@ -16,7 +16,7 @@ public class GrabStock {
         stockGrabber.setIBMPrice(4);
         stockGrabber.setApplePrice(30);
         stockGrabber.setGooglePrice(10);
-        // stockGrabber.unregister(observer1);
+        observer1.update(0, 0, 0);
 
 
         Runnable getIBM = new GetTheStock(stockGrabber, 2, "IBM", 120);
