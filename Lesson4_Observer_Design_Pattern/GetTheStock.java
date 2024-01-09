@@ -43,7 +43,7 @@ public class GetTheStock implements Runnable{
 			if(stock == "Apple") ((StockGrabber) stockGrabber).setApplePrice(price);
 			if(stock == "Google") ((StockGrabber) stockGrabber).setGooglePrice(price);
 
-			System.out.println(stock + ": " + df.format((price + randNum)));
+			// System.out.println(stock + ": " + df.formCCCat((price + randNum)));
 
 		}
 	}
