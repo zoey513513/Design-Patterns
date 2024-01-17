@@ -33,6 +33,7 @@ public class EnemyShipTesting {
 
 
 		}
+		userInput.close();
     }
 
 
